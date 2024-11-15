@@ -1,0 +1,19 @@
+package Assignments;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class FacebookDDSelectclass {
+	public static void main(String[] args) {
+		WebDriver driver =new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+		
+		driver.get("https://en-gb.facebook.com/reg/");
+		driver.findElement(By.id("month"));
+		driver.findElement(By.id(""));
+	}
+}
