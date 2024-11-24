@@ -15,9 +15,11 @@ public class DemowebshopFBsign {
 		String titleDS = driver.getTitle();
 		System.out.println(titleDS);
 		driver.findElement(By.xpath("//a[text()='Facebook']")).click();
+
 		Switchtofb(driver, "facebook");
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//span[text()='Create new account']")).click();
+
 		Switchtofb(driver, "reg/?next");
 		String title = driver.getTitle();
 		System.out.println(title);
@@ -30,11 +32,12 @@ public class DemowebshopFBsign {
 
 		for (String string : windowHandles) {
 			driver.switchTo().window(string);
+
 			String currentUrl = driver.getCurrentUrl();
-			System.out.println(currentUrl);
+//			System.out.println(currentUrl);
+
 			if (currentUrl.contains(url)) {
 				break;
-
 			}
 		}
 	}
