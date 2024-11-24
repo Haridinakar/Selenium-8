@@ -40,5 +40,6 @@ public class Demoi {
 		driver.findElement(By.id("RememberMe")).click();
 
 		driver.findElement(By.xpath("(//input[@type='submit'])[2]")).click();
+		//some changes
 	}
 }
