@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 public class TolearnHardAssert {
 	@Test
 	public void launchBrowser() {
+		//changes
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
